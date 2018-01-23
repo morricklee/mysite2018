@@ -1,0 +1,98 @@
+.container {
+    width: 80%;
+    margin: 120px auto;
+}
+
+.div1 {
+    float:left;
+    width: 98%;
+    height: 100px;
+    outline: 1px solid red;
+    text-indent: 10px;
+}
+
+.div2 {
+    float: left;
+    width: 49%;
+    height: 300px;
+    outline: 1px solid olive;
+    text-indent: 10px;
+}
+
+.div3 {
+    float: left;
+    width: 49%;
+    height: 150px;
+    outline: 1px solid fuchsia;
+    text-indent: 10px;
+    }
+
+.div4 {
+    float: left;
+    width: 49%;
+    height: 150px;
+    outline: 1px solid maroon;
+    text-indent: 10px;
+}
+
+.div5 {
+    float:left;
+    width: 98%;
+    height: 100px;
+    outline: 1px solid blue;
+    text-indent: 10px;
+}
+
+/* sample02.html */
+
+header {
+    padding: 0px;
+    text-align: center;
+    background-color: cyan;
+}
+
+Nav {
+    text-align: center;
+    background-color:cyan;
+    padding-top: 2px;
+    height: 40px;
+    }
+
+ul li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+article {
+    padding: 5px;
+    border: dotted 3px red;
+    margin-top: 5px;
+    background-color: yellow;
+}
+
+aside {
+    padding: 2px;
+    border: double 2px #b200ff;
+    margin-top:5px;
+    text-indent:5px;
+    font-style: italic;
+    background-color: lightskyblue;
+}
+
+section {
+    text-indent: 5px;
+    margin_top: 5px;
+    border: dashed 5px blue;
+
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+
+}
