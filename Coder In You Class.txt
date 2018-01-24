@@ -1,0 +1,51 @@
+1) Install Visual Studio Code (VSC)
+2) Create github.com account
+3) Install git (git-scm.com)
+4) Understand VSC (Integrated Developtment Environment)
+
+<!doctype html>  - if html5, use this tag
+
+
+enjoycss.com
+
+cleancss.com
+
+cssportal.com/css-style-editor
+
+============
+day 2
+
+https://www.bestcssbuttongenerator.com/
+
+===
+to upload to github:
+command promt and find the file of the project
+e.g.
+C:\Users\lee>Desktop\Coder In You\MySite2018>
+
+use cd to change directory
+
+=== MUST be in folder of project to do the git init
+only do/ run only once
+
+C:\Users\lee>Desktop\Coder In You\MySite2018>git int
+
+1) Step 1: Create repository:
+2) type cmd in window search, 
+3) type "git init"
+4) type "git commit -m "first commit"
+5) first time, enter user name and password
+* 6) type "git add *"
+* 7) type " git commit -m "first commit"  addd origina
+8) type "git remote add origin https://github.com/morricklee/mysite2018.git
+* 9) git push -u origin master
+
+those steps with * we need to enter when want to push file to git
+
+
+login to git hub > Settings> GitHub Pages
+
+under Source, click on None dropdown box, select "Master Branch"- if first time upload, the file will be the Master copy
+
+
+
