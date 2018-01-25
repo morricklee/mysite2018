@@ -1,0 +1,81 @@
+<!doctype.html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript">
+        // Javascript code
+        //document.write("<h1>Hello World!!</h1>");
+
+        // variable declaration
+        var firstname = "Frank";
+        var lastname = "Tay"
+        var fullname = " ";
+        var a = 10;
+        var b = 20;
+        var result = 0;
+        // set a default of result memory location as 0, can also be var result;
+
+        // steps or tasks carried out
+        function sumTwoValue() {
+            result = a + b;
+            alert("result of a + b: " + result);
+        }
+
+        function concatName() {
+            fullname = firstname + " " + lastname;
+            alert("full name: " + fullname);
+        }
+        
+
+        function computeSum() {
+            var first = document.getElementById("FirstNumber");
+            var second = document.getElementById("SecondNumber");
+
+            var f = parseInt(first);
+            var s = parseInt(second);
+
+            var rslt = sumValues(f,s);
+            alert(rslt);
+
+
+            sumValues(f, s);
+        }
+
+        funtion sumValues(a,b) {
+            var resultSum = a + b;
+            //alert(resultSum);
+        }
+
+        //alert("Result: " + result + "\r\n" + "Fullname: " + fullname);
+        //\r\n  means carriage return to new line
+
+
+
+        console.log("Name:" + fullname);
+
+    </script>
+
+    Enter number One:
+    <input type="number" id="FirstNumber" />
+    <br>
+    <br>
+    Enter number Two:
+    <input type="number" id="SecondNumber" />
+    <br>
+    <br>
+    
+    <input type="button" onclick="computeSum()" value="Sum Inbput Values" />
+    <br>
+    <br>
+    <input type="button" onclick="sumTwoValue()" value="Sum Two Values" />
+    <br>
+    <br>
+    <input type="button" onclick="concatName()" value="Show Full Name"/>
+
+</body>
+
+</html>
