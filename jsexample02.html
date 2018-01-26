@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 
@@ -160,4 +161,168 @@ for (var i = 0; i < names2.length; i++)
     <input type="button" value="Show Value" onclick="getData()" />
 </body>
 
+=======
+<!doctype html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <script lang="javascript" type="text/javascript">
+
+        /* global and local variable */
+        var data = "global";
+
+        function getData() {
+            var data = "local";
+
+            //shows local data
+            // alert("data: " + data);
+
+            alert("data: " + this.data);
+        }
+        // adding this.data will point to the global variable. 
+        //alternatively can name global variable as data1 and use in function
+
+        //comparitors
+        var a = true;
+        var b = true;
+
+        var result1 = (a && b);
+        var result2 = (a || b);
+        var result3 = !(a && b);
+        var result4 = !(a || b);
+
+        document.writeln(result1);
+        document.writeln(result2);
+        document.writeln(result3);
+        document.writeln(result4);
+
+        // if...else condition
+        var num1 = 6;
+        var num2 = 6;
+
+        /* && represents AND
+        || represents OR
+        ! represents NOT 
+        */
+
+
+        // equal comparison
+        if (num1 == num2) {
+            document.writeln("num1 equals num2<br>");
+        }
+        else {
+            if (num1 < num2) 
+                {
+                document.writeln("num1 is less than num2<br>");
+                }
+            else {
+                if (num1 > num2) 
+                {
+                    document.writeln("num1 is greater than num2<br>");
+                }
+            }
+        }
+
+
+        // arrays of string or list of string is a list of objects
+        var names = ['Sheau', 'Natasha', 'Sharil', 'Joel', 'Gareth', 'Cynthia'];
+
+        //array of number / list of numbers
+        var numbers = [12, 24, 33, 35, 37, 42];
+
+        var names2 = [];
+
+        var numbers2 = [];
+
+        for (var i = 0; i < names.length; i++) 
+        {
+            document.write(names[i] + "<br>");
+        }
+
+        for (var i = 0; i < numbers.length; i++) 
+        {
+            document.write(numbers[i] + "<br>");
+        }
+
+        var x = 0;
+        while (x < names.length) 
+        {
+            document.write(names[x] + "<br>");
+            x++;
+        }
+
+// take everything in 'names' array and put to array'names2' array 
+        for (var i = 0; i < names.length; i++) 
+        {
+           names2.push(names[i]);
+        }
+
+// print out everythng that has been put this array "name2"
+for (var i = 0; i < names2.length; i++) 
+        {
+           document.write(names2[i] + "<br>");
+        }
+
+        // switch case statement
+        var marks = 79;
+        var grade = " ";
+
+        if (marks < 50)
+        {
+            grade = "F";
+        }
+            else if ((marks >=50) && (marks < 60))
+
+            {
+                grade = "D";
+            }
+                else if ((marks >=60) && (marks <70))
+                {
+                    grade = "C";
+                }
+                    else if ((marks >=70) && (marks <80))
+                    {
+                        grade= "B";
+                    }
+
+                    else 
+                    {
+                        grade= "A";
+                    }
+
+
+        switch(grade)
+                {
+                case "A":
+                    document.write("Exceptionally Well");
+                    break;
+                case "B":
+                    document.write("Moderately Well");
+                    getData();
+                    break;
+                case "C":
+                    document.write("Average");
+                    getData1();
+                    break;
+                case "D":
+                    document.write("Poor");
+                    break;
+                default:
+                    document.write("Failed the module<br>");
+                break;
+                }
+                    
+
+
+    </script>
+
+    <input type="button" value="Show Value" onclick="getData()" />
+</body>
+
+>>>>>>> a5113d215852e161ad2b03d22f7f5f7993aa0668
 </html>

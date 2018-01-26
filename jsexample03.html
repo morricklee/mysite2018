@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 
@@ -80,4 +81,88 @@
     <a href="javascript:location.reload(true)">Refresh Page</a>
 </body>
 
+=======
+<!doctype html>
+<html>
+
+<head>
+    <script lang="javascript" type="text/javascript">
+    
+    function autoRefresh(t)
+    {
+        setTimeout("location.reload(true);", t);
+    }
+
+    function redirectPage()
+    {
+        window.location="https://www.microsoft.com";
+    }
+
+//if t= 1000 is 1 second, t =5000 is 5 seconds
+        
+        //settimeout will repeat the refresh
+    {
+
+    }
+    
+    </script>
+</head>
+
+    <body onload="javascript:redirectPage();">
+//<body onload="javascript:autoRefresh(5000);">
+    <script lang="javascript" type="text/javascript">
+        var employee =
+            {
+                name: "James",
+                email: "jams@cook.com",
+                tel: "9999999"
+            }
+
+        // this is json notation, data from google api, amazon api all use this
+        var employeelist =
+            [
+                {
+                    name: "James",
+                    email: "jams@cook.com",
+                    tel: "9999999"
+                },
+
+                {
+                    name: "Mark",
+                    email: "mark@cook.com",
+                    tel: "8888888"
+                },
+        
+                {
+                    name: "Lee",
+                    email: "lee@cook.com",
+                    tel: "7777777"
+                }
+
+            ]
+            
+            document.write("Size of employeelist: "+ employeelist.length);
+            document.write("<br>");
+            document.write("<table border=2 width=80% align=center>");
+                document.write("<thead>");
+                document.write("<tr>");
+                document.write("<th>" + employeelist.keys.name +"</th>");
+                document.write("<th>" + employeelist.keys.email +"</th>");
+                document.write("<th>" + employeelist.keys.tel +"</th>");
+                document.write("</tr>");
+
+            for(var i=0; i< employeelist.length; i++)
+            {
+                document.write("<tr>");
+                document.write("<td>" + employeelist[i].name +"</td>");
+                document.write("<td>" + employeelist[i].email +"</td>");
+                document.write("<td>" + employeelist[i].tel +"</td>");
+                document.write("</tr>");
+            }
+            document.write("</table>");
+    </script>
+    <a href="javascript:location.reload(true)">Refresh Page</a>
+</body>
+
+>>>>>>> a5113d215852e161ad2b03d22f7f5f7993aa0668
 </html>
